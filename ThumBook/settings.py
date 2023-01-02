@@ -5,7 +5,7 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-&-met3qq%rd)kk&p_$)=v!+8-px&r7ovsd#mq+ws3ri-og17uj"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # 환경변수에 따라 DEBUG모드 여부를 결정합니다.
 DEBUG = True
